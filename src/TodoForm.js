@@ -14,9 +14,11 @@ class TodoForm extends React.Component {
   }
 
 
+
   addTodo = text => {
     console.log("sum", this.props.todos);
     const newTodos = [...this.props.todos, { text }];
+    console.log("sum sum", newTodos);
     this.props.setTodos(newTodos);
     };
 
